@@ -1,0 +1,6 @@
+---
+Name: routes
+---
+Director:
+  rules:
+    '_components//$Action/$ID/$Name': 'Symbiote\DesignBridge\DesignBridgeController'
