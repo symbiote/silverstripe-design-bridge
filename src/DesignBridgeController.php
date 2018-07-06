@@ -283,7 +283,7 @@ class DesignBridgeController extends Page_Controller
                         'Component' => '',               // ie. Stub for renderWith() of component
                         'Link' => $this->Link($templateName), // Link to the component in this controller
                         'Pathname' => $templatePathname, // ie. Filepath to the template file
-                        'IsDefaultParametersTemplate' => strpos($templateName, '_example') !== FALSE,
+                        'IsDefaultParametersTemplate' => strpos($templateName, '_example') !== false,
                     );
                 }
             }
