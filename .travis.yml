@@ -16,11 +16,11 @@ matrix:
     - php: 5.4
       env:
         - DB=PGSQL
-        - CORE_RELEASE=3.2
+        - CORE_RELEASE=3.6
     - php: 5.5
       env:
         - DB=MYSQL
-        - CORE_RELEASE=3.3
+        - CORE_RELEASE=3.6
     - php: 5.6
       env:
         - DB=MYSQL
