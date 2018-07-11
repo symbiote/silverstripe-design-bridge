@@ -1,10 +1,10 @@
 # Design Bridge
 
-[![Build Status](https://travis-ci.org/symbiote/silverstripe-designbridge.svg?branch=master)](https://travis-ci.org/symbiote/silverstripe-designbridge)
-[![Latest Stable Version](https://poser.pugx.org/symbiote/silverstripe-designbridge/version.svg)](https://github.com/symbiote/silverstripe-designbridge/releases)
-[![Latest Unstable Version](https://poser.pugx.org/symbiote/silverstripe-designbridge/v/unstable.svg)](https://packagist.org/packages/symbiote/silverstripe-designbridge)
-[![Total Downloads](https://poser.pugx.org/symbiote/silverstripe-designbridge/downloads.svg)](https://packagist.org/packages/symbiote/silverstripe-designbridge)
-[![License](https://poser.pugx.org/symbiote/silverstripe-designbridge/license.svg)](https://github.com/symbiote/silverstripe-designbridge/blob/master/LICENSE.md)
+[![Build Status](https://travis-ci.org/symbiote/silverstripe-design-bridge.svg?branch=master)](https://travis-ci.org/symbiote/silverstripe-design-bridge)
+[![Latest Stable Version](https://poser.pugx.org/symbiote/silverstripe-design-bridge/version.svg)](https://github.com/symbiote/silverstripe-design-bridge/releases)
+[![Latest Unstable Version](https://poser.pugx.org/symbiote/silverstripe-design-bridge/v/unstable.svg)](https://packagist.org/packages/symbiote/silverstripe-design-bridge)
+[![Total Downloads](https://poser.pugx.org/symbiote/silverstripe-design-bridge/downloads.svg)](https://packagist.org/packages/symbiote/silverstripe-design-bridge)
+[![License](https://poser.pugx.org/symbiote/silverstripe-design-bridge/license.svg)](https://github.com/symbiote/silverstripe-design-bridge/blob/master/LICENSE.md)
 
 A module that allows viewing components in isolation via https://{baseurl}/_components/.
 
@@ -15,7 +15,7 @@ Features:
 ## Composer Install
 
 ```
-composer require symbiote/silverstripe-designbridge:~1.0
+composer require symbiote/silverstripe-design-bridge:~1.0
 ```
 
 ## Requirements
