@@ -1,6 +1,6 @@
 <?php
 
-namespace SilbinaryWolf\Components\Tests;
+namespace SilbinaryWolf\DesignBridge\Tests;
 
 use Config;
 use SapphireTest;
