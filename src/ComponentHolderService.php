@@ -2,7 +2,7 @@
 
 namespace Symbiote\DesignBridge;
 
-use SilbinaryWolf\Components\ComponentService;
+use Symbiote\Components\ComponentService;
 use SSViewer;
 use SSViewer_Scope;
 use HTMLText;
@@ -16,8 +16,8 @@ class ComponentHolderService extends ComponentService
     public function renderComponentTopLevel($name, array $props)
     {
         Injector::nest();
-        Injector::inst()->registerService(new ComponentHolderService, 'SilbinaryWolf\\Components\\ComponentService');
-        $service = Injector::inst()->get('SilbinaryWolf\\Components\\ComponentService');
+        Injector::inst()->registerService(new ComponentHolderService, 'Symbiote\\Components\\ComponentService');
+        $service = Injector::inst()->get('Symbiote\\Components\\ComponentService');
         $componentHolderHTML = $service->renderComponent($name, $props, new \SSViewer_Scope(null));
         Injector::unnest();
         return $componentHolderHTML;
@@ -33,13 +33,13 @@ class ComponentHolderService extends ComponentService
         // We do this so nested rendering of components can be reasoned about with Sketch.
         //
         Injector::unnest();
-        $service = Injector::inst()->get('SilbinaryWolf\\Components\\ComponentService');
+        $service = Injector::inst()->get('Symbiote\\Components\\ComponentService');
         Injector::nest();
-        Injector::inst()->registerService(new ComponentHolderService, 'SilbinaryWolf\\Components\\ComponentService');
+        Injector::inst()->registerService(new ComponentHolderService, 'Symbiote\\Components\\ComponentService');
 
         if (get_class($service) === __CLASS__) {
             //$componentHTML = parent::renderComponent($name, $props, $scope);
-            throw new Exception('Expected "SilbinaryWolf\\Components\\ComponentService" to be reverted back to the original Injector config before calling renderComponent(). This is so we can override ComponentService with the injector on a project to project basis if need be.');
+            throw new Exception('Expected "Symbiote\\Components\\ComponentService" to be reverted back to the original Injector config before calling renderComponent(). This is so we can override ComponentService with the injector on a project to project basis if need be.');
         }
         $componentHTML = $service->renderComponent($name, $props, $scope);
 
