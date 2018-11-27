@@ -21,7 +21,7 @@ composer require symbiote/silverstripe-design-bridge:~1.0
 ## Requirements
 
 * SilverStripe 3.6+
-* [Components 1.0+](https://github.com/silbinarywolf/silverstripe-components)
+* [Components 1.3+](https://github.com/symbiote/silverstripe-components)
 
 ## Documentation
 
